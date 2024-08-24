@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Let's Play Gunting, Kertas, Batu!</h1>
+    <main>
+      <details class="rules-container">
+        <summary>Aturan game yang berlaku:</summary>
+
+        <p>Kamu akan bermain melawan computer(bot).</p>
+        <p>Kamu bisa memilih antara Batu, Kertas dan Gunting. untuk melawan bot.</p>
+        <p>Pemenang di tentukan oleh pihak pertama yang mencapai 3 Score.</p>
+
+        <p>Catatan:</p>
+        <p>Istiilah 'Counter' merupakan penangkal atau bisa di sebut kelemahan.</p>
+        <p>Ini adalah aturan untuk mendapatkan poin/score di dalam game:</p>
+        <ul>
+          <li>Batu Mengcounter Gunting</li>
+          <li>Gunting Mengcounter Kertas</li>
+          <li>Kertas Mengcounter Batu</li>
+        </ul>
+        <p>
+          Jika player dan komputer(bot) memilih pilihan yang sama (Ex. Kertas dan
+          Kertas), maka tidak akan ada yang mendapatkan poin/score.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong
+          >Player Score: <span class="score" id="player-score">0</span></strong
+        >
+        <strong
+          >Computer Score:
+          <span class="score" id="computer-score">0</span></strong
+        >
+      </div>
+
+      <section class="options-container">
+        <h2>Choose an option:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Batu</button>
+          <button id="paper-btn" class="btn">Kertas</button>
+          <button id="scissors-btn" class="btn">Gunting</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">Play again?</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
